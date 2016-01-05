@@ -1,0 +1,1 @@
+<link rel="import" href="gooditem1.tpl?__inline">

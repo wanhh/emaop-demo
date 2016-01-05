@@ -1,0 +1,44 @@
+<?php
+
+function smarty_compiler_searchurl($arrParams,  $smarty){
+    $DEFAULT_LIST=array(
+        'brandId'=>0,
+        'sellType'=>0,
+        'carriageId'=>0,
+        'price'=>0,
+        'source'=>0
+    );
+    $TPLDATA=$arrParams['tplData'];
+    $CITY=$TPLDATA['curCity']['pinyin']?$TPLDATA['curCity']['pinyin']:'beijing';
+    $PREVURL='/city/'.$CITY.'/car-';
+    $selectedList=$TPLDATA['searchParam']?$TPLDATA['searchParam']:$DEFAULT_LIST;
+    $selectedList=$DEFAULT_LIST;
+    if($arrParams['brandId']){
+        $selectedList['brandId']=$arrParams['brandId'];
+    }
+    if($arrParams['sellType']){
+        $selectedList['sellType']=$arrParams['sellType'];
+    }
+    if($arrParams['carriageId']){
+        $selectedList['carriageId']=$arrParams['carriageId'];
+    }
+    if($arrParams['price']){
+        $selectedList['price']=$arrParams['price'];
+    }
+    if($arrParams['source']){
+        $selectedList['source']=$arrParams['source'];
+    }
+    $url=$PREVURL.$selectedList['brandId'];
+    $url.='-';
+    $url.=$arrParams['brandId'];
+    $url.='-';
+    $url.=$arrParams['sellType'];
+    $url.='-';
+    $url.=$arrParams['carriageId'];
+    $url.='-';
+    $url.=$arrParams['price'];
+  //$url.='-';
+  //$url.=$arrParams['source'];
+    $url.='-1.html';
+    return $url;
+}

@@ -1,0 +1,117 @@
+@import url('reset.css?__inline');
+html,body{
+    height: 100%;
+}
+body{
+    font: 12px "Microsoft Yahei", "Arial", verdana, helvetica, sans-serif;
+}
+.small-font{
+    -webkit-text-size-adjust:none;
+}
+table{border-collapse:collapse;border-spacing:0;empty-cells:show;}
+input{border:none;}
+button,input[type=submit]{cursor:pointer;font-family:'Microsoft Yahei',Arial,Helvetica,Simsun,sans-serif;}
+img{vertical-align:top;border: 0;}
+a{text-decoration:none;color:#4D4D4D; cursor: pointer;}
+a:hover,.top-con a:hover{text-decoration:none;}
+a:focus{outline:0;text-decoration:none;}
+label{font-weight:400;}
+.clearfix:after,.clearfix:before{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+* html .clearfix,*+html .clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+.head-border{border-bottom: #dd1136 solid 3px;}
+.center{width: 990px; margin:0 auto;}
+.none{display: none;}
+.color{background-repeat: no-repeat;}
+.color1{background-image: url("../img/public/color_01.jpg");}
+.color2{background-image: url("../img/public/color_02.jpg");}
+.color3{background-image: url("../img/public/color_03.jpg");}
+.color4{background-image: url("../img/public/color_04.jpg");}
+.color5{background-image: url("../img/public/color_05.jpg");}
+.color6{background-image: url("../img/public/color_06.jpg");}
+.color7{background-image: url("../img/public/color_07.jpg");}
+.color8{background-image: url("../img/public/color_08.jpg");}
+.color9{background-image: url("../img/public/color_09.jpg");}
+.color10{background-image: url("../img/public/color_10.jpg");}
+.color11{background-image: url("../img/public/color_11.jpg");}
+.color12{background-image: url("../img/public/color_12.jpg");}
+.color13{background-image: url("../img/public/color_13.jpg");}
+.color14{background-image: url("../img/public/color_14.jpg");}
+.color15{background-image: url("../img/public/color_15.jpg");}
+.color16{background-image: url("../img/public/color_16.jpg");}
+.color17{background-image: url("../img/public/color_17.jpg");}
+.color18{background-image: url("../img/public/color_18.jpg");}
+.color19{background-image: url("../img/public/color_19.jpg");}
+.color20{background-image: url("../img/public/color_20.jpg");}
+.color21{background-image: url("../img/public/color_21.jpg");}
+.color22{background-image: url("../img/public/color_22.jpg");}
+.color23{background-image: url("../img/public/color_23.jpg");}
+.color24{background-image: url("../img/public/color_24.jpg");}
+.color25{background-image: url("../img/public/color_25.jpg");}
+.color26{background-image: url("../img/public/color_26.jpg");}
+.color27{background-image: url("../img/public/color_27.jpg");}
+.bg,.body-bg {
+    background:#f5f5f5 url("../img/public/carbg.jpg") no-repeat 0 132px;
+}
+.page-center{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+.body990 .page-center{
+    width: 990px;
+    margin: 0 auto;
+}
+.box{display: -webkit-box;display: -moz-box;display: -ms-box;display: box;}
+.flex1{-webkit-box-flex: 1;-moz-box-flex: 1;-ms-box-flex: 1;box-flex: 1;}
+.borderbox{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
+.center-v{
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-align:center;
+    display:-moz-box;
+    -moz-box-orient:horizontal;
+    -moz-box-align:center;
+    display:-o-box;
+    -o-box-orient:horizontal;
+    -o-box-align:center;
+    display:-ms-box;
+    -ms-box-orient:horizontal;
+    -ms-box-align:center;
+    display:box;
+    box-orient:horizontal;
+    box-align:center;
+}
+.centerbox{
+    text-align: center;
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    display:-moz-box;
+    -moz-box-orient:horizontal;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    display:-o-box;
+    -o-box-orient:horizontal;
+    -o-box-pack:center;
+    -o-box-align:center;
+    display:-ms-box;
+    -ms-box-orient:horizontal;
+    -ms-box-pack:center;
+    -ms-box-align:center;
+    display:box;
+    box-orient:horizontal;
+    box-pack:center;
+    box-align:center;
+}
+
+
+
+
+
+
+

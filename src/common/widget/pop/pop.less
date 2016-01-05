@@ -1,0 +1,99 @@
+.pop{
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index: 1000;
+  display: none;
+}
+.pop-bg{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+.pop-cont{
+  position: absolute;
+  z-index: 2;
+  width: 594px;
+  height: 414px;
+  border-radius: 10px;
+  top:50%;
+  left:50%;
+  margin-top: -200px;
+  margin-left: -297px;
+}
+.pop-cont-bg{
+  position: absolute;
+  z-index: 1;
+  background-color:#000;
+  opacity: 0.2;
+  filter:alpha(opacity=20);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.pop-box{
+  position: absolute;
+  z-index: 2;
+  top:8px;
+  left:8px;
+  right:8px;
+  bottom:8px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.pop-close{
+  position: absolute;
+  z-index: 3;
+  background: url(/static/img/close.png) no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  top:18px;
+  cursor: pointer;
+}
+
+.pop-head{
+  background: #E5E5E5;
+  height: 50px;
+}
+.msg-tit{
+  font-size: 22px;
+  text-align: center;
+  line-height: 36px;
+  margin: 80px 0 20px;
+  .cardnum{
+    margin: 0 20px;
+  }
+}
+.msg-tip{
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #888;
+  margin-bottom: 30px;
+}
+.pop-btns{
+  text-align: center;
+  .pop-btn{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 40px;
+    border-radius: 5px;
+    background: #DD1136;
+    cursor: pointer;
+    margin: 0 20px;
+  }
+  .btn-cancel{
+    background: #8E8B86;
+  }
+}

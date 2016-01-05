@@ -1,0 +1,257 @@
+.top-wrap2 {
+  min-width: 1200px;
+  height: 34px;
+  line-height: 34px;
+  background:#332e2e;
+  border-bottom: 1px solid #e5e5e5;
+  color: #999999;
+  text-align: center;
+  position: relative;
+  z-index: 88;
+  .top-con {
+    position: relative;
+    font-size: 12px;
+    a {
+      color: #999999;
+    }
+    a:hover {
+      color: #d5d5d5;
+    }
+    .top-left {
+      float: left;
+    }
+    .top-left li {
+      padding-left: 20px;
+      float: left;
+    }
+    .top-left li:first-child{
+      padding-left: 0;
+    }
+    .wx-box{
+      position: absolute;
+      right: 0;
+      top:0;
+      height: 100%;
+      width: 140px;
+      border: 1px solid #696565;
+      border-top:none;
+      border-bottom:none;
+      display: block;
+      overflow: hidden;
+      dt{
+        text-align: right;
+        background: url(/static/lib/img/weixin.png) no-repeat 0 0;
+        color: #999999;
+        padding-right: 10px;
+      }
+      dd{
+        width: 100%;
+        height: 140px;
+        text-align: center;
+        background:#f5f5f5;
+        img{
+          margin-top: 16px;
+          width: 108px;
+        }
+      }
+      &:hover{
+        height:170px;
+        border-bottom:1px solid #e5e5e5;
+      }
+    }
+    i {
+      width: 1px;
+      height: 14px;
+      display: inline-block;
+      margin: 0 0 -3px 20px;
+      background: #999999;
+      overflow: hidden;
+      padding: 0;
+    }
+    .top-right, .sign-up {
+      float: right;
+      margin-right: 150px;
+
+    }
+    .top-right li, .sign-up li {
+      padding-left: 20px;
+      float: left;
+    }
+    .sign-up li a{-webkit-transition: all 0.2s ease-in-out 0s;-moz-transition: all 0.2s ease-in-out 0s;transition: all 0.2s ease-in-out 0s;}
+    .sign-up li a.avatar {position: relative;top: 6px; right: 5px; float: left; display: inline-block; width: 20px; height: 20px; border-radius: 100%; overflow: hidden;}
+    .sign-up li a.logined { float: left; margin-left: 5px;}
+    .sign-up li a.avatar img { width: 100%; height: 100%;}
+  }
+
+}
+.head-wrap2{
+  position: relative;
+  z-index: 77;
+  min-width:1200px;
+  border-bottom:1px solid #e5e5e5;
+  background:#fff;
+.header{
+  width: 100%;
+  position:relative;
+  height: 95px;
+  z-index: 33;
+  .logo {
+    float: left;
+    padding: 14px 0 0 0;
+    img{    height: 67px;}
+  }
+  .adress-put {
+    height: 28px;
+    margin: 37px 0 0 40px;
+    float: left;
+    position: relative;
+    line-height: 28px;
+    color: #666666;
+    font-size: 14px;
+    cursor: pointer;
+    border:none;
+    width: auto;
+    .adre-font {
+      padding: 0 18px 0 1px;
+      width:auto;
+      display: inline-block;
+    }
+    .arrow-down {
+      width: 0px;
+      height: 0px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #424242;
+      font-size: 0px;
+      line-height: 0px;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top:12px;
+    }
+    .adre-tips{
+      position: absolute;
+      left: 0;
+      top: 30px;
+      display: none;
+      overflow: hidden;
+      width: 530px;
+      max-height: 370px;
+      padding: 1px;
+      cursor: default;
+      border: 1px solid #dedede;
+      color: #333333;
+      background: #fff;
+      dl{
+        max-height: 268px;
+        overflow: hidden;
+        overflow-y: auto;
+        margin: 15px 10px;
+      }
+      dd,.city-hot{
+        position: relative;
+        line-height: 20px;
+        padding: 8px 0 8px 90px;
+      }
+      .city-hot{
+        padding: 10px 0 10px 90px;
+        line-height: 30px;
+        height: 30px;
+        background: #f5f5f5;
+        a{
+          color: #e92c2c;
+        }
+      }
+      .pov{
+        position: absolute;
+        left: 0;
+        width: 80px;
+        text-align: right;
+        display: inline-block;
+      }
+      .city{
+        display: inline-block;
+      }
+
+      a{
+        display: inline-block;
+        color: #666666;
+        float: left;
+        margin-right: 10px;
+      }
+
+    }
+  }
+  .qr-box{
+      position: absolute;
+      right: 260px;
+      top:30px;
+      display: inline-block;
+      dl{
+        border-right:1px solid #D7D7D7;
+      }
+      dt{
+        height: 35px;
+        line-height: 35px;
+        padding: 0 18px 0 40px;
+        background: url(/static/lib/img/phone.png) no-repeat 9px 5px #fff;
+        position: relative;
+        font-size: 14px;
+        z-index: 3;
+        border:1px solid #D7D7D7;
+        border-right:none;
+      }
+      dd{
+        z-index: 1;
+        position: absolute;
+        display: none;
+        border:1px solid #D7D7D7;
+        background-color: #fff;
+        right:0;
+        top:36px;
+        padding: 18px;
+        width: 255px;        height: 104px;
+        overflow: hidden;
+        img{
+          float:left;
+          margin-right: 18px;
+          height: 104px;
+
+        }
+        p{
+          padding-top: 20px;
+          line-height: 24px;
+          strong{
+            font-size: 18px;
+            color:#ed3f36;
+
+          }
+        }
+      }
+  }
+  .qr-box:hover{
+    dt{
+      border-bottom-color: #fff;
+    }
+    dd{
+      display:block;
+    }
+
+  }
+  .kf-info{
+    position: absolute;
+    right: 0;
+    top:20px;
+    text-align: right;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333333;
+    .kf-time{
+      font-size: 14px;
+      color: #a6a6a6;
+    }
+
+  }
+}
+
+}

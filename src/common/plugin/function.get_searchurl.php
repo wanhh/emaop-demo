@@ -1,0 +1,63 @@
+<?php
+/**
+ */
+
+function smarty_function_get_searchurl($arrParams, $template) {
+    $TPLDATA=$template->getTemplateVars("tplData");
+    $DEFAULT_LIST=array(
+    'brandId'=>0,
+    'sellType'=>0,
+    'carriageId'=>0,
+    'price'=>0,
+    'carFrom'=>0,
+    'isActivity'=>0,
+    'priceSort'=>0
+    );
+    $CITY=$TPLDATA['curCity']['pinyin']?$TPLDATA['curCity']['pinyin']:'beijing';
+    $PREVURL='/city/'.$CITY.'/car';
+    $selectedList=$TPLDATA['searchParam']?$TPLDATA['searchParam']:$DEFAULT_LIST;
+    if(isset($arrParams['brandId'])){
+    $selectedList['brandId']=$arrParams['brandId'];
+    }
+    if(isset($arrParams['sellType'])){
+    $selectedList['sellType']=$arrParams['sellType'];
+    }
+    if(isset($arrParams['carriageId'])){
+    $selectedList['carriageId']=$arrParams['carriageId'];
+    }
+    if(isset($arrParams['price'])){
+    $selectedList['price']=$arrParams['price'];
+    }
+    if(isset($arrParams['carFrom'])){
+    $selectedList['carFrom']=$arrParams['carFrom'];
+    }
+    if(isset($arrParams['isActivity'])){
+    $selectedList['isActivity']=$arrParams['isActivity'];
+    }
+    if(isset($arrParams['priceSort'])){
+    $selectedList['priceSort']=$arrParams['priceSort'];
+    }
+    if($arrParams['keyId']){
+    $selectedList[$arrParams['keyId']]=$arrParams['keyVal']?$arrParams['keyVal']:'0';
+    }
+    if($arrParams['clearALL']){
+    $selectedList=$DEFAULT_LIST;
+    }
+    $url=$PREVURL;
+    $url.='-';
+    $url.=$selectedList['sellType'];
+    $url.='-';
+    $url.=$selectedList['brandId'];
+    $url.='-';
+    $url.=$selectedList['carriageId'];
+    $url.='-';
+    $url.=$selectedList['price'];
+    $url.='-';
+    $url.=$selectedList['carFrom'];
+    $url.='-';
+    $url.=$selectedList['isActivity'];
+    $url.='-';
+    $url.=$selectedList['priceSort'];
+    $url.='-1.html';
+    return $url;
+}
